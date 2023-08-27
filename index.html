@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <title>スパルタコーディングクラブ</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+        * {
+            font-family: 'Gowun Dodum', sans-serif;
+        }
+
+        .mytitle {
+            color: white;
+
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            background-image: url('desktop-728x410.png');
+            background-position: center;
+            background-size: contain;
+        }
+
+        .mycomment {
+            color: gray;
+        }
+
+        .mycard {
+            width: 1500px;
+            margin: 20px auto 20px auto;
+        }
+
+        .mypost {
+            width: 400px;
+            margin: 20px auto 20px auto;
+            padding: 20px 20px 20px 20px;
+
+            box-shadow: 0px 0px 3px 0px gray;
+        }
+
+        .mybtn {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            margin-top: 20px;
+        }
+
+        .mybtn>button {
+            margin-right: 10px;
+        }
+
+        .nav {
+            width: 100%;
+            height: 100px;
+            background-color: black;
+
+        }
+
+        .nav-link {
+
+            color: yellow;
+            font-size: large;
+            background-color: aliceblue;
+        }
+
+        .nav-pills {
+            background-color: aliceblue;
+        }
+
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link {
+            color: #fff;
+            background-color: black;
+        }
+
+        .d-flex {
+            background-color: antiquewhite;
+            width: 100%;
+        }
+
+        .btn {
+            height: 55px;
+        }
+
+       .carousel {
+            width: 1200px;
+            height: 600px;
+            margin: 100px auto 100px auto;
+        }
+        .carousel-item {
+            width: 1200px;
+            height: 600px;
+        }
+        .carousel-item>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="mytitle">
+        <h1>映画紹介</h1>
+    </div>
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                type="button" role="tab" aria-controls="nav-home" aria-selected="true">ホーム</button>
+            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                type="button" role="tab" aria-controls="nav-profile" aria-selected="false">最新</button>
+            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                type="button" role="tab" aria-controls="nav-contact" aria-selected="false">設定</button>
+        </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <div class="mycard">
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="desktop-1280x1024.png"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">ここに映画のタイトルが入ります。</h5>
+                                <p class="card-text">ここに映画の説明が入ります。</p>
+                                <p>⭐⭐⭐</p>
+                                <p class="mycomment">ここにコメントが入ります。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="desktop-1280x1024.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">ここに映画のタイトルが入ります。</h5>
+                                <p class="card-text">ここに映画の説明が入ります。</p>
+                                <p>⭐⭐⭐</p>
+                                <p class="mycomment">ここにコメントが入ります。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="desktop1-1280x1024.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">ここに映画のタイトルが入ります。</h5>
+                                <p class="card-text">ここに映画の説明が入ります。</p>
+                                <p>⭐⭐⭐</p>
+                                <p class="mycomment">ここにコメントが入ります。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">映画URL</label>
+                        </div>
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01">採点</label>
+                            <select class="form-select" id="inputGroupSelect01">
+                              <option selected>--------------選択--------------</option>
+                              <option value="1">⭐</option>
+                              <option value="2">⭐⭐</option>
+                              <option value="3">⭐⭐⭐</option>
+                              <option value="4">⭐⭐⭐⭐</option>
+                              <option value="5">⭐⭐⭐⭐⭐</option>
+                            </select>
+                          </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here"
+                                id="floatingTextarea"></textarea>
+                            <label for="floatingTextarea">コメント</label>
+                        </div>
+                        <div class="mybtn">
+                            <button type="button" class="btn btn-dark">記録</button>
+                            <button type="button" class="btn btn-light">閉じる</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="1desktop-1280x1024.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="2desktop-1280x1024.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="3desktop-1024x576.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="4desktop-1280x1024.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">設定画面(何を？)</div>
+    </div>
+
+</body>
+
+</html>
